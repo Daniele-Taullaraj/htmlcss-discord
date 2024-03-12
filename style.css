@@ -3,35 +3,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
 }
 
-.main-box {
-    width: 100%;
-    height: 20rem;
-}
-
-.center-w50 {
-    width: 50%;
-    margin: auto;
-}
-
-.dashed {
-    border: 1px dashed black;
+:root {
+    --bg-blue: #255EE9;
 }
 
 .flex {
     display: flex;
 }
 
-.bg-azzurro {
-    background-color: #ADD8E6;
+.center-w50 {
+    width: 80%;
+    margin: auto;
 }
+
+.main-box {
+    width: 100%;
+}
+
+
+
+.dashed {
+    border: 1px dashed black;
+}
+
+
+.white-button {
+    color: #000000;
+}
+
+.button {
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    margin-right: 1rem;
+    border: 0;
+}
+
+.black-button {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 
 .bg-pink {
     background-color: #FFC0CB;
 }
 
-.bg-blue {
+.bg-bluea {
     background-color: #1E90FF;
 }
 
@@ -43,50 +64,56 @@
     background-color: black;
 }
 
+
+
 /*+++++++++++ NAV STYLE +++++++++++*/
 
-body>.bg-azzurro {
-    padding-top: 0.5rem;
+body>.main-box {
+    background-color: var(--bg-blue);
 }
 
 nav {
-    background-color: #DAA520;
+    padding: 1rem 0;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* ++++++++++++++++++++++++++++++++ */
-nav>div {
-    padding: 0.5rem 0.2rem;
-    font-size: 1rem;
+.button-nav {
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 0.8rem;
+    border: 0;
+    background-color: var(--bg-blue);
 }
 
-.nav-logo {
-    width: 25%;
-}
-
-.nav-login {
-    width: 25%;
-    text-align: right;
-}
-
-.nav-link {
-    width: 50%;
-    text-align: center;
-}
-
-/* ++++++++++++++++++++++++++++++++ */
-.jumble-img {
-    height: 88%;
-    margin-top: 0.5rem;
-    background-color: #00008B;
+/*+++++++++++ JUMBLE-DOWNLOAD STYLE +++++++++++*/
+.container-jumble {
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    height: 33em;
     /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 
 .jumble-download {
-    width: 35%;
-    height: 80%;
-    background-color: #EE82EE;
+    width: 50%;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumble-download>h1 {
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+
+.jumble-download>p {
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
 }
 
 /*+++++++++++1*_2*_3* Sezione STYLE +++++++++++*/
