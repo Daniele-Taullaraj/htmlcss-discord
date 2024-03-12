@@ -15,18 +15,17 @@
     display: flex;
 }
 
-.center-w80 {
-    width: 80%;
-    margin: auto;
-}
-
-
-
-
 .dashed {
     border: 1px dashed black;
 }
 
+
+
+
+.center-w80 {
+    width: 80%;
+    margin: auto;
+}
 
 .white-button {
     color: #000000;
@@ -43,6 +42,8 @@
     background-color: #000000;
     color: #FFFFFF;
 }
+
+
 
 
 .bg-pink {
@@ -132,6 +133,28 @@ nav {
 
 }
 
+.text-box {
+    width: 45%;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7rem;
+}
+
+.text-box h1,
+.text-big-section h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.text-box p,
+.text-big-section p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+
 /*+++++++++++ PRIMA-SECONDA-TERZA STYLE +++++++++++*/
 .prima-foto {
     background-image: url(./img/item1.svg);
@@ -148,34 +171,38 @@ nav {
     background-size: cover;
 }
 
-.text-box {
-    width: 45%;
-    height: 100%;
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 7rem;
-}
-
-.text-box h1 {
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-}
-
-.text-box p {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-}
-
-/*+++++++++++4* Sezione STYLE +++++++++++*/
+/*+++++++++++QUARTA STYLE +++++++++++*/
 .sezione-big {
-    height: 30rem;
     padding-top: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .inner-sezione-big {
-    background-color: green;
-    height: 25rem;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-big-section {
+    width: 60%;
+    text-align: center;
+}
+
+.end-big-section {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.end-big-section button {
+    margin-top: 2rem;
+    background-color: #7289DA;
+    color: #FFFFFF;
+}
+
+.end-big-section h2 {
+    position: relative;
+    top: -20px;
 }
 
 /*+++++++++++5* Sezione STYLE +++++++++++*/
