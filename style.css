@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 :root {
@@ -191,6 +193,9 @@ nav {
     margin-top: 2rem;
     background-color: #7289DA;
     color: #FFFFFF;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    border: 0;
 }
 
 .end-big-section h2 {
@@ -265,4 +270,8 @@ nav {
     border-radius: 25px;
     border: 0;
     margin: 1rem 0;
+}
+
+#img-footer {
+    width: 100%;
 }
