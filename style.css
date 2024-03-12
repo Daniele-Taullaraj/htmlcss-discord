@@ -15,7 +15,15 @@
     display: flex;
 }
 
-
+nav button:hover,
+.container-jumble button:hover,
+.end-big-section button:hover,
+.end-section button:hover,
+.social-box button:hover {
+    cursor: pointer;
+    border-color: white;
+    box-shadow: white 0 0.2rem 1rem;
+}
 
 .center-w80 {
     width: 80%;
@@ -47,7 +55,6 @@
 }
 
 
-
 /*+++++++++++ NAV STYLE +++++++++++*/
 
 body>.main-box {
@@ -65,6 +72,7 @@ nav {
     color: #FFFFFF;
     font-weight: 400;
     padding: 0.8rem;
+    border-radius: 25px;
     border: 0;
     background-color: var(--bg-blue);
 }
@@ -207,7 +215,7 @@ nav {
 }
 
 .social-box i,
-.social-box p {
+.social-box div {
     color: #FFFFFF;
     margin-bottom: 0.5rem;
 }
@@ -236,22 +244,25 @@ nav {
     color: #7289DA;
 }
 
-/*+++++++++++Footer STYLE +++++++++++*/
-footer {
-    padding-top: 1rem;
+#bandiera-ita {
+    height: 0.8rem;
+    margin-right: 0.5rem;
 }
 
+/*+++++++++++Footer STYLE +++++++++++*/
 .end-section {
-    height: 3rem;
     /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    border-top: 1px solid white;
 }
 
-.logo-end,
-.button-end {
-    padding: 0.2rem;
-    background-color: #F08080;
+.end-section button {
+    background-color: #7289DA;
+    color: #FFFFFF;
+    padding: 0.4rem 0.5rem;
+    border-radius: 25px;
+    border: 0;
+    margin: 1rem 0;
 }
