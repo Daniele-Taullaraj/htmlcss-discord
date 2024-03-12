@@ -15,14 +15,11 @@
     display: flex;
 }
 
-.center-w50 {
+.center-w80 {
     width: 80%;
     margin: auto;
 }
 
-.main-box {
-    width: 100%;
-}
 
 
 
@@ -116,21 +113,58 @@ nav {
     margin-bottom: 1rem;
 }
 
-/*+++++++++++1*_2*_3* Sezione STYLE +++++++++++*/
+/*+++++++++++ SEZIONI STYLE +++++++++++*/
+.padding-sez {
+    padding: 2rem 0;
+}
 
 .rettangolo-std {
-    height: 15rem;
+    height: 23rem;
     display: flex;
 }
 
-.p-right {
-    width: 40%;
-    height: 100%;
+.box-right {
+    width: 55%;
 }
 
-.p-left {
-    width: 60%;
+.box-left {
+    width: 45%;
+
+}
+
+/*+++++++++++ PRIMA-SECONDA-TERZA STYLE +++++++++++*/
+.prima-foto {
+    background-image: url(./img/item1.svg);
+    background-size: cover;
+}
+
+.seconda-foto {
+    background-image: url(./img/item2.svg);
+    background-size: cover;
+}
+
+.terza-foto {
+    background-image: url(./img/item3.svg);
+    background-size: cover;
+}
+
+.text-box {
+    width: 45%;
     height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7rem;
+}
+
+.text-box h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.text-box p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
 }
 
 /*+++++++++++4* Sezione STYLE +++++++++++*/
