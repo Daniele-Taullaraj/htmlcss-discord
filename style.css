@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 
-.box {
+.main-box {
     width: 100%;
     height: 20rem;
 }
 
-.center {
+.center-w50 {
     width: 50%;
     margin: auto;
 }
@@ -19,18 +19,8 @@
     border: 1px dashed black;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
+.flex {
+    display: flex;
 }
 
 .bg-azzurro {
@@ -61,7 +51,6 @@ body>.bg-azzurro {
 
 nav {
     background-color: #DAA520;
-    display: flex;
 }
 
 /* ++++++++++++++++++++++++++++++++ */
@@ -70,44 +59,41 @@ nav>div {
     font-size: 1rem;
 }
 
-.logo {
+.nav-logo {
     width: 25%;
 }
 
-.login {
+.nav-login {
     width: 25%;
     text-align: right;
 }
 
-.link {
+.nav-link {
     width: 50%;
     text-align: center;
 }
 
 /* ++++++++++++++++++++++++++++++++ */
-.rettangolo-main {
+.jumble-img {
     height: 88%;
     margin-top: 0.5rem;
     background-color: #00008B;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 
-.rettangolo-pink {
+.jumble-download {
     width: 35%;
     height: 80%;
     background-color: #EE82EE;
 }
 
 /*+++++++++++1*_2*_3* Sezione STYLE +++++++++++*/
-.sezione-std {
-    display: flex;
-    align-items: center;
-}
 
 .rettangolo-std {
     height: 15rem;
+    display: flex;
 }
 
 .p-right {
@@ -126,29 +112,28 @@ nav>div {
     padding-top: 2.5rem;
 }
 
-.rettangolo-green {
+.inner-sezione-big {
     background-color: green;
     height: 25rem;
 }
 
 /*+++++++++++5* Sezione STYLE +++++++++++*/
-.quinta-sez {
+.info-sezione {
     padding-top: 0.5rem;
     border-bottom: 0.1rem solid white;
 }
 
-.sez-multipli {
+.info-column {
     height: 17rem;
-    display: flex;
 }
 
-.red-div {
+.social-box {
     height: 100%;
     width: 30%;
     background-color: #F08080;
 }
 
-.acqua-div {
+.extra-link {
     height: 100%;
     width: calc(70% / 4);
     background-color: #20B2AA;
@@ -163,7 +148,7 @@ footer {
 .end-section {
     height: 3rem;
     background-color: #20B2AA;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
