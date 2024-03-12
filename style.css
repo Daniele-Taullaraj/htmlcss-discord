@@ -15,20 +15,11 @@
     display: flex;
 }
 
-.dashed {
-    border: 1px dashed black;
-}
-
-
 
 
 .center-w80 {
     width: 80%;
     margin: auto;
-}
-
-.white-button {
-    color: #000000;
 }
 
 .button {
@@ -38,20 +29,13 @@
     border: 0;
 }
 
+.white-button {
+    color: #000000;
+}
+
 .black-button {
     background-color: #000000;
     color: #FFFFFF;
-}
-
-
-
-
-.bg-pink {
-    background-color: #FFC0CB;
-}
-
-.bg-bluea {
-    background-color: #1E90FF;
 }
 
 .bg-grey {
@@ -134,12 +118,13 @@ nav {
 }
 
 .text-box {
+    margin-left: 7rem;
     width: 45%;
     height: 100%;
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
-    margin-left: 7rem;
+
 }
 
 .text-box h1,
@@ -205,27 +190,50 @@ nav {
     top: -20px;
 }
 
-/*+++++++++++5* Sezione STYLE +++++++++++*/
+/*+++++++++++QUINTA STYLE +++++++++++*/
 .info-sezione {
-    padding-top: 0.5rem;
-    border-bottom: 0.1rem solid white;
-}
-
-.info-column {
-    height: 17rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .social-box {
-    height: 100%;
-    width: 30%;
-    background-color: #F08080;
+    width: 20%;
+}
+
+.social-box h2 {
+    color: #7289DA;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-box i,
+.social-box p {
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.social-box button {
+    background-color: black;
+    border: 0;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 .extra-link {
-    height: 100%;
-    width: calc(70% / 4);
-    background-color: #20B2AA;
-    border: 1px dashed white;
+    width: 20%;
+    /* display: flex; */
+    flex-direction: column;
+    padding-left: 5%;
+    line-height: 2rem;
+}
+
+.extra-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.extra-link p {
+    color: #7289DA;
 }
 
 /*+++++++++++Footer STYLE +++++++++++*/
@@ -235,11 +243,11 @@ footer {
 
 .end-section {
     height: 3rem;
-    background-color: #20B2AA;
     /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: red;
 }
 
 .logo-end,
