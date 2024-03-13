@@ -17,7 +17,12 @@
     display: flex;
 }
 
-nav button:hover,
+.button-nav:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.accedi-btn:hover,
 .container-jumble button:hover,
 .end-big-section button:hover,
 .end-section button:hover,
@@ -58,8 +63,7 @@ nav button:hover,
 
 
 /*+++++++++++ NAV STYLE +++++++++++*/
-
-body>.main-box {
+.nav-box {
     background-color: var(--bg-blue);
 }
 
@@ -75,7 +79,7 @@ nav {
     font-weight: 400;
     padding: 0.8rem;
     border-radius: 25px;
-    border: 0;
+    border: 1px solid transparent;
     background-color: var(--bg-blue);
 }
 
@@ -83,14 +87,13 @@ nav {
 .container-jumble {
     background-image: url(./img/jumbo.png);
     background-size: cover;
-    height: 33em;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
+    background-position: top;
 }
 
 .jumble-download {
+    padding: 6em 0;
     width: 50%;
+    margin: 0 auto;
     text-align: center;
     /* display: flex; */
     flex-direction: column;
@@ -113,28 +116,20 @@ nav {
     padding: 2rem 0;
 }
 
-.rettangolo-std {
-    height: 23rem;
-    display: flex;
-}
-
 .box-right {
     width: 55%;
 }
 
 .box-left {
     width: 45%;
-
 }
 
 .text-box {
+    padding: 2rem 0;
     margin-left: 7rem;
     width: 45%;
-    height: 100%;
     /* display: flex; */
     flex-direction: column;
-    justify-content: center;
-
 }
 
 .text-box h1,
@@ -187,6 +182,7 @@ nav {
     /* display: flex; */
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .end-big-section button {
@@ -201,6 +197,10 @@ nav {
 .end-big-section h2 {
     position: relative;
     top: -20px;
+}
+
+.big-foto {
+    width: 100%;
 }
 
 /*+++++++++++QUINTA STYLE +++++++++++*/
@@ -274,4 +274,17 @@ nav {
 
 #img-footer {
     width: 100%;
+    style-color: red;
+}
+
+/*+++++++++++SVG STYLE +++++++++++*/
+
+svg {
+    color: #D3D3D3;
+    display: block;
+    padding-top: 1rem;
+}
+
+.reverse-svg {
+    transform: rotate(180deg);
 }
